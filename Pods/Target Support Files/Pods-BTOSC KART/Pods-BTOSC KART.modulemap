@@ -1,0 +1,6 @@
+framework module Pods_BTOSC_KART {
+  umbrella header "Pods-BTOSC KART-umbrella.h"
+
+  export *
+  module * { export * }
+}

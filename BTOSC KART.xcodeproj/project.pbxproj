@@ -20,9 +20,11 @@
 		6FCB733F23C6424C004B6264 /* urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB733E23C6424C004B6264 /* urls.swift */; };
 		6FCB734123C646CE004B6264 /* networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB734023C646CE004B6264 /* networking.swift */; };
 		6FCB734323C64D5A004B6264 /* constantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB734223C64D5A004B6264 /* constantStrings.swift */; };
+		FE9643A2A7C448571BB75D41 /* Pods_BTOSC_KART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F72497889B8ED365D8542E6 /* Pods_BTOSC_KART.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F72497889B8ED365D8542E6 /* Pods_BTOSC_KART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOSC_KART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F501D9223C48DB800F8E022 /* setUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setUp.swift; sourceTree = "<group>"; };
 		6F59625723C51A03005D65CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6FAD3C5C23C3AA550082E535 /* BTOSC KART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTOSC KART.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +40,8 @@
 		6FCB733E23C6424C004B6264 /* urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urls.swift; sourceTree = "<group>"; };
 		6FCB734023C646CE004B6264 /* networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networking.swift; sourceTree = "<group>"; };
 		6FCB734223C64D5A004B6264 /* constantStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constantStrings.swift; sourceTree = "<group>"; };
+		DF2A6D8D7FBB102F8CA641A9 /* Pods-BTOSC KART.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOSC KART.release.xcconfig"; path = "Target Support Files/Pods-BTOSC KART/Pods-BTOSC KART.release.xcconfig"; sourceTree = "<group>"; };
+		F040C91ECD130DA750C7B991 /* Pods-BTOSC KART.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOSC KART.debug.xcconfig"; path = "Target Support Files/Pods-BTOSC KART/Pods-BTOSC KART.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9643A2A7C448571BB75D41 /* Pods_BTOSC_KART.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,8 @@
 			children = (
 				6FAD3C5E23C3AA550082E535 /* BAZARO */,
 				6FAD3C5D23C3AA550082E535 /* Products */,
+				E6EFDFA1172B7734E7819BAF /* Pods */,
+				AC642D834BF3959D8DDB4D35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +136,24 @@
 			path = "BTOSC KART";
 			sourceTree = "<group>";
 		};
+		AC642D834BF3959D8DDB4D35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F72497889B8ED365D8542E6 /* Pods_BTOSC_KART.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6EFDFA1172B7734E7819BAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F040C91ECD130DA750C7B991 /* Pods-BTOSC KART.debug.xcconfig */,
+				DF2A6D8D7FBB102F8CA641A9 /* Pods-BTOSC KART.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FAD3C7323C3AA560082E535 /* Build configuration list for PBXNativeTarget "BTOSC KART" */;
 			buildPhases = (
+				9163D9C0B4F852CD02975538 /* [CP] Check Pods Manifest.lock */,
 				6FAD3C5823C3AA550082E535 /* Sources */,
 				6FAD3C5923C3AA550082E535 /* Frameworks */,
 				6FAD3C5A23C3AA550082E535 /* Resources */,
+				626E0CDD8156BA97A938A4C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		626E0CDD8156BA97A938A4C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTOSC KART/Pods-BTOSC KART-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTOSC KART/Pods-BTOSC KART-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTOSC KART/Pods-BTOSC KART-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9163D9C0B4F852CD02975538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BTOSC KART-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FAD3C5823C3AA550082E535 /* Sources */ = {
@@ -351,6 +420,7 @@
 		};
 		6FAD3C7423C3AA560082E535 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F040C91ECD130DA750C7B991 /* Pods-BTOSC KART.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +439,7 @@
 		};
 		6FAD3C7523C3AA560082E535 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2A6D8D7FBB102F8CA641A9 /* Pods-BTOSC KART.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
