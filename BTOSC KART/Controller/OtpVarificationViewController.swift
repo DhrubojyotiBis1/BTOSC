@@ -18,6 +18,11 @@ class OtpVarificationViewController: UIViewController {
     @IBOutlet weak var thirdNumberInOtpTextField:UITextField!
     @IBOutlet weak var fourthNumberInOtpTextField:UITextField!
     @IBOutlet weak var continueButton:UIButton!
+    @IBOutlet weak var otpTime:UILabel!
+    @IBOutlet weak var resendOtpButton:UIButton!
+    let otpResendingTime = 25
+    var currentTime = Int()
+    var timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +41,9 @@ class OtpVarificationViewController: UIViewController {
     
 
     @IBAction func didNotGetOtpButtonPressed(_ sender: UIButton) {
+        self.otpTime.text = String(self.otpResendingTime)
+        self.resendOtpButton.isEnabled = false
+        self.setTimer()
         //self.networkingForResendingOtp()
     }
 }
@@ -109,6 +117,14 @@ extension OtpVarificationViewController{
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onTap))
         self.contentView.addGestureRecognizer(tapGesture)
+        
+        //setting timer
+        self.setTimer()
+    }
+    
+    private func setTimer(){
+        self.currentTime = self.otpResendingTime
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.calculateTime), userInfo: nil, repeats: true)
     }
     
     @objc private func onTap(){
@@ -138,6 +154,21 @@ extension OtpVarificationViewController{
             default:
                 break
             }
+        }
+    }
+    
+    @objc private func calculateTime(){
+        if(currentTime == 0){
+            self.timer.invalidate()
+            self.resendOtpButton.isEnabled = true
+            return
+        }
+        
+        self.currentTime -= 1
+        if(self.currentTime < 10){
+            self.otpTime.text = "0\(self.currentTime)"
+        }else{
+            self.otpTime.text = String(self.currentTime)
         }
     }
 }

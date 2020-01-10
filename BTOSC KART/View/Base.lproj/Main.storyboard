@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WaZ-Lb-qjn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KLd-zN-lxI">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -628,33 +628,40 @@
                                     <action selector="continueButtonPressed:" destination="KLd-zN-lxI" eventType="touchUpInside" id="Epg-jF-j45"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-U8-vod">
-                                <rect key="frame" x="80" y="433.66666666666669" width="254" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="f37-dU-2Ax"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="I didn't get a OTP">
-                                    <color key="titleColor" red="0.4039215686" green="0.27450980390000002" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didNotGetOtpButtonPressed:" destination="KLd-zN-lxI" eventType="touchUpInside" id="ZZF-Nf-xkU"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4X8-27-3Vr">
+                                <rect key="frame" x="8" y="431.66666666666669" width="212.33333333333334" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-U8-vod">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="33"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="didn't get otp RESEND">
+                                            <color key="titleColor" red="0.4039215686" green="0.27450980390000002" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didNotGetOtpButtonPressed:" destination="KLd-zN-lxI" eventType="touchUpInside" id="ZZF-Nf-xkU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa6-ka-nlh">
+                                        <rect key="frame" x="192" y="0.0" width="20.333333333333343" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="imk-oz-But" firstAttribute="centerX" secondItem="LQ3-n8-BJc" secondAttribute="centerX" id="1EN-aq-dgt"/>
                             <constraint firstItem="wDf-5S-LPF" firstAttribute="trailing" secondItem="2Hx-fX-bH8" secondAttribute="trailing" constant="8" id="26Z-ae-12m"/>
                             <constraint firstItem="imk-oz-But" firstAttribute="top" secondItem="LQ3-n8-BJc" secondAttribute="bottom" constant="40" id="R7p-6b-2gi"/>
-                            <constraint firstItem="wDf-5S-LPF" firstAttribute="trailing" secondItem="6ww-U8-vod" secondAttribute="trailing" constant="80" id="aE4-5Z-qd2"/>
+                            <constraint firstItem="4X8-27-3Vr" firstAttribute="leading" secondItem="wDf-5S-LPF" secondAttribute="leading" constant="8" id="REZ-W1-pNh"/>
+                            <constraint firstItem="4X8-27-3Vr" firstAttribute="top" secondItem="2Hx-fX-bH8" secondAttribute="bottom" constant="10" id="SL1-Fj-rD6"/>
                             <constraint firstItem="2Hx-fX-bH8" firstAttribute="top" secondItem="imk-oz-But" secondAttribute="bottom" constant="15" id="akU-i8-4fq"/>
-                            <constraint firstItem="6ww-U8-vod" firstAttribute="leading" secondItem="wDf-5S-LPF" secondAttribute="leading" constant="80" id="azq-68-2sI"/>
                             <constraint firstItem="LQ3-n8-BJc" firstAttribute="leading" secondItem="wDf-5S-LPF" secondAttribute="leading" constant="16" id="eq7-XC-gkJ"/>
                             <constraint firstItem="wDf-5S-LPF" firstAttribute="trailing" secondItem="LQ3-n8-BJc" secondAttribute="trailing" constant="16" id="hAN-y2-fNc"/>
                             <constraint firstItem="2Hx-fX-bH8" firstAttribute="leading" secondItem="wDf-5S-LPF" secondAttribute="leading" constant="8" id="hSG-b6-aD8"/>
                             <constraint firstItem="LQ3-n8-BJc" firstAttribute="top" secondItem="wDf-5S-LPF" secondAttribute="top" constant="200" id="rKw-yj-q2G"/>
-                            <constraint firstItem="6ww-U8-vod" firstAttribute="top" secondItem="2Hx-fX-bH8" secondAttribute="bottom" constant="12" id="uDD-Hv-ORm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wDf-5S-LPF"/>
                     </view>
@@ -663,14 +670,16 @@
                         <outlet property="continueButton" destination="2Hx-fX-bH8" id="nMz-tX-FIS"/>
                         <outlet property="firstNumberInOtpTextField" destination="ofd-bd-frR" id="qTa-bL-583"/>
                         <outlet property="fourthNumberInOtpTextField" destination="8tQ-fP-Chh" id="voe-SC-Ep5"/>
+                        <outlet property="otpTime" destination="aa6-ka-nlh" id="ql4-La-qed"/>
                         <outlet property="phoneNumberLable" destination="NFs-8b-wOc" id="HYM-Kk-ZPR"/>
+                        <outlet property="resendOtpButton" destination="6ww-U8-vod" id="qHW-ie-GCO"/>
                         <outlet property="secondNumberInOtpTextField" destination="40G-ZH-1Jv" id="xf8-FE-px9"/>
                         <outlet property="thirdNumberInOtpTextField" destination="Ec6-DG-wdC" id="QxR-Dt-0oo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAm-un-zyz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1985" y="178"/>
+            <point key="canvasLocation" x="1984.057971014493" y="177.45535714285714"/>
         </scene>
         <!--Item-->
         <scene sceneID="6Wl-zu-Ewi">
