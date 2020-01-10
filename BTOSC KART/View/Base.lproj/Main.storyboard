@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KLd-zN-lxI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhK-yJ-jCA">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -523,6 +523,7 @@
                         <outlet property="phoneNumber" destination="eus-22-qlY" id="IOq-Fh-Df3"/>
                         <outlet property="signInButton" destination="RnL-7v-iDG" id="t25-VS-wyl"/>
                         <outlet property="signInView" destination="NJJ-OS-iFP" id="mfW-Tr-ZIT"/>
+                        <segue destination="KLd-zN-lxI" kind="show" identifier="goToOtpVarificationVC" id="isM-sg-Sg9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W10-MH-O4g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -554,7 +555,7 @@
         <!--Otp Varification View Controller-->
         <scene sceneID="LXS-Qg-AUS">
             <objects>
-                <viewController id="KLd-zN-lxI" customClass="OtpVarificationViewController" customModule="BTOSC_KART" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="KLd-zN-lxI" customClass="OtpVarificationViewController" customModule="BTOSC_KART" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zRh-8R-2f7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -665,6 +666,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wDf-5S-LPF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cxu-ap-KKc"/>
                     <connections>
                         <outlet property="contentView" destination="zRh-8R-2f7" id="qzi-s1-Uds"/>
                         <outlet property="continueButton" destination="2Hx-fX-bH8" id="nMz-tX-FIS"/>
@@ -675,6 +677,7 @@
                         <outlet property="resendOtpButton" destination="6ww-U8-vod" id="qHW-ie-GCO"/>
                         <outlet property="secondNumberInOtpTextField" destination="40G-ZH-1Jv" id="xf8-FE-px9"/>
                         <outlet property="thirdNumberInOtpTextField" destination="Ec6-DG-wdC" id="QxR-Dt-0oo"/>
+                        <segue destination="WaZ-Lb-qjn" kind="show" identifier="goToHomeVC" id="Lap-bh-Hui"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAm-un-zyz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -684,13 +687,13 @@
         <!--Item-->
         <scene sceneID="6Wl-zu-Ewi">
             <objects>
-                <viewController id="vgz-Aj-WEW" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="vgz-Aj-WEW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AgJ-6V-41Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVu-oV-QbT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N36-by-oKE">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
@@ -788,8 +791,9 @@
         <!--Tab Bar Controller-->
         <scene sceneID="OwC-KW-Es7">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WaZ-Lb-qjn" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="WaZ-Lb-qjn" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="rhd-sv-9j5"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C9W-XO-bTN">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -811,9 +815,9 @@
         <!--Item-->
         <scene sceneID="EYT-eo-ffB">
             <objects>
-                <viewController id="Q2m-lm-YE2" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Q2m-lm-YE2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6m-eK-dmH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="u1Y-CI-vea"/>
@@ -827,9 +831,9 @@
         <!--Item-->
         <scene sceneID="I1u-da-wlB">
             <objects>
-                <viewController id="mkK-ua-2dc" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="mkK-ua-2dc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EfF-PC-Dib">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PhH-zb-ni1"/>
@@ -843,9 +847,9 @@
         <!--Item-->
         <scene sceneID="Kcl-Er-cFq">
             <objects>
-                <viewController id="AvV-xo-gGb" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="AvV-xo-gGb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y3D-Do-Sau">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3Ki-2x-Ec3"/>
@@ -860,9 +864,9 @@
         <!--Item-->
         <scene sceneID="782-zg-zWn">
             <objects>
-                <viewController id="Yc9-HC-vYs" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Yc9-HC-vYs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xqZ-6c-lb5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="oZ0-4J-cce"/>

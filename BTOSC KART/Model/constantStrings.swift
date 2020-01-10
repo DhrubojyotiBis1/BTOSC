@@ -19,7 +19,7 @@ struct smsGateWayConstants {
     static let promotionMassage = "This is a promotion massage"
     static let transactionRoute = "4"
     static let promotionRoute = "1"
-    static let india = "91"
+    static let countryCode = "91"
     static let international = "0"
     static let usa = "1"
     static let lengthOfOtp = "4"

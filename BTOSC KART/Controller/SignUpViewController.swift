@@ -28,31 +28,51 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUpButtonPressed(_ sender:UIButton){
         
-        if(email.text != "" || firstname.text == "" || lastname.text == "" || password.text == "" || confirmPassword.text == ""){
+        if(email.text == "" || firstname.text == "" || lastname.text == "" || password.text == "" || confirmPassword.text == "" || phoneNumber.text == ""){
             
             if(firstname.text == ""){
                 //first name is empty
+                print("First name empty")
             }else if(lastname.text == ""){
                 //last name is empty
+                print("last name empty")
             }else if(email.text == ""){
                 //email is empty
+                print("email name empty")
             }else if(password.text == ""){
                 //password is empty
-            }else{
+                print("password name empty")
+            }else if(confirmPassword.text == ""){
                 //confirm password is empty
+                print("confirm password name empty")
+            }else{
+                //phone number is empty
+                print("phone number empty")
             }
         }else{
             //nothing is empty
             if(password.text == confirmPassword.text){
                 //every thing is good to go
+                let phoneNumber = smsGateWayConstants.countryCode + self.phoneNumber.text!
                 //do the networking to signUp
+                networking().getOtp(withPhoneNumber: phoneNumber)
                 //send the user to the next VC
+                performSegue(withIdentifier: segueIdentifier.OtpVaificationVC, sender: nil)
             }else{
                 //password and confirm password is not same
+                print("password and confirm password not same")
             }
             
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueIdentifier.OtpVaificationVC {
+            let destination = segue.destination as! OtpVarificationViewController
+            let phoneNumber = smsGateWayConstants.countryCode + self.phoneNumber.text!
+            destination.phoneNumber = phoneNumber
+        }
     }
     
 }

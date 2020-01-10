@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class OtpVarificationViewController: UIViewController {
     
@@ -32,7 +33,13 @@ class OtpVarificationViewController: UIViewController {
     }
     
     @IBAction func continueButtonPressed(_ sender:UIButton){
-        self.neworkingForOtpVarification()
+        //checking if all four digit is enterd or not
+        if(self.firstNumberInOtpTextField.text != "" || self.secondNumberInOtpTextField.text != "" || self.thirdNumberInOtpTextField.text == "" || self.fourthNumberInOtpTextField.text != ""){
+            self.neworkingForOtpVarification()
+        }else{
+            //all four digit of otp not entered
+            //show error massage to the user
+        }
     }
     
     @IBAction func backButtonPressed(_ sender:UIButton){
@@ -44,7 +51,7 @@ class OtpVarificationViewController: UIViewController {
         self.otpTime.text = String(self.otpResendingTime)
         self.resendOtpButton.isEnabled = false
         self.setTimer()
-        //self.networkingForResendingOtp()
+        self.networkingForResendingOtp()
     }
 }
 
@@ -83,8 +90,8 @@ extension OtpVarificationViewController{
         
     }
     
-    /*private func networkingForResendingOtp(){
-        Networking().resendOtp(forPhoneNumber: phoneNumber) { (result,token) in
+    private func networkingForResendingOtp(){
+        networking().resendOtp(forPhoneNumber: phoneNumber) { (result,token) in
             if(result){
                 //otp resended done
                 print("otp resended done")
@@ -98,13 +105,13 @@ extension OtpVarificationViewController{
                 }
             }
         }
-    }*/
+    }
 }
 
 //All private function
 extension OtpVarificationViewController{
     private func setup(){
-       // self.phoneNumberLable.text = self.phoneNumber
+        self.phoneNumberLable.text = self.phoneNumber
         
         setUp().makeCardView(forButton: self.continueButton, withShadowHight: 4.5, shadowWidth: 0, shadowOpacity: 0.4, shadowRadius: 0, cornerRadius: 10)
         

@@ -8,5 +8,6 @@ target 'BTOSC KART' do
   # Pods for BTOSC KART
   
   pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 end

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0E595223C913EC002B25FA /* segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E595123C913EC002B25FA /* segue.swift */; };
 		6F501D9323C48DB800F8E022 /* setUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F501D9223C48DB800F8E022 /* setUp.swift */; };
 		6F59625823C51A03005D65CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59625723C51A03005D65CA /* SignUpViewController.swift */; };
 		6FAD3C6023C3AA550082E535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAD3C5F23C3AA550082E535 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		3F72497889B8ED365D8542E6 /* Pods_BTOSC_KART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOSC_KART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0E595123C913EC002B25FA /* segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segue.swift; sourceTree = "<group>"; };
 		6F501D9223C48DB800F8E022 /* setUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setUp.swift; sourceTree = "<group>"; };
 		6F59625723C51A03005D65CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6FAD3C5C23C3AA550082E535 /* BTOSC KART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTOSC KART.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				6FCB733E23C6424C004B6264 /* urls.swift */,
 				6FCB734023C646CE004B6264 /* networking.swift */,
 				6FCB734223C64D5A004B6264 /* constantStrings.swift */,
+				6F0E595123C913EC002B25FA /* segue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,7 +153,6 @@
 				F040C91ECD130DA750C7B991 /* Pods-BTOSC KART.debug.xcconfig */,
 				DF2A6D8D7FBB102F8CA641A9 /* Pods-BTOSC KART.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -272,6 +274,7 @@
 				6F59625823C51A03005D65CA /* SignUpViewController.swift in Sources */,
 				6FAD3C6423C3AA550082E535 /* ViewController.swift in Sources */,
 				6FCB734323C64D5A004B6264 /* constantStrings.swift in Sources */,
+				6F0E595223C913EC002B25FA /* segue.swift in Sources */,
 				6FAD3C6023C3AA550082E535 /* AppDelegate.swift in Sources */,
 				6FCB733F23C6424C004B6264 /* urls.swift in Sources */,
 				6FCB733D23C63A24004B6264 /* OtpVarificationViewController.swift in Sources */,
