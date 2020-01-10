@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		6F501D9223C48DB800F8E022 /* setUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setUp.swift; sourceTree = "<group>"; };
 		6F59625723C51A03005D65CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		6FAD3C5C23C3AA550082E535 /* BAZARO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAZARO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FAD3C5C23C3AA550082E535 /* BTOSC KART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTOSC KART.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAD3C5F23C3AA550082E535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FAD3C6123C3AA550082E535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6FAD3C6323C3AA550082E535 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		6FAD3C5D23C3AA550082E535 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FAD3C5C23C3AA550082E535 /* BAZARO.app */,
+				6FAD3C5C23C3AA550082E535 /* BTOSC KART.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,15 +125,16 @@
 				6FAD3C7023C3AA560082E535 /* Info.plist */,
 				6FAD3C6823C3AA550082E535 /* BAZARO.xcdatamodeld */,
 			);
-			path = BAZARO;
+			name = BAZARO;
+			path = "BTOSC KART";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FAD3C5B23C3AA550082E535 /* BAZARO */ = {
+		6FAD3C5B23C3AA550082E535 /* BTOSC KART */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FAD3C7323C3AA560082E535 /* Build configuration list for PBXNativeTarget "BAZARO" */;
+			buildConfigurationList = 6FAD3C7323C3AA560082E535 /* Build configuration list for PBXNativeTarget "BTOSC KART" */;
 			buildPhases = (
 				6FAD3C5823C3AA550082E535 /* Sources */,
 				6FAD3C5923C3AA550082E535 /* Frameworks */,
@@ -143,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = BAZARO;
+			name = "BTOSC KART";
 			productName = BAZARO;
-			productReference = 6FAD3C5C23C3AA550082E535 /* BAZARO.app */;
+			productReference = 6FAD3C5C23C3AA550082E535 /* BTOSC KART.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6FAD3C5723C3AA550082E535 /* Build configuration list for PBXProject "BAZARO" */;
+			buildConfigurationList = 6FAD3C5723C3AA550082E535 /* Build configuration list for PBXProject "BTOSC KART" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FAD3C5B23C3AA550082E535 /* BAZARO */,
+				6FAD3C5B23C3AA550082E535 /* BTOSC KART */,
 			);
 		};
 /* End PBXProject section */
@@ -354,12 +355,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55DX457GXB;
-				INFOPLIST_FILE = BAZARO/Info.plist;
+				INFOPLIST_FILE = "BTOSC KART/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tips.BAZARO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tips.BTOSC KART";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -372,12 +373,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55DX457GXB;
-				INFOPLIST_FILE = BAZARO/Info.plist;
+				INFOPLIST_FILE = "BTOSC KART/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tips.BAZARO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tips.BTOSC KART";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -387,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FAD3C5723C3AA550082E535 /* Build configuration list for PBXProject "BAZARO" */ = {
+		6FAD3C5723C3AA550082E535 /* Build configuration list for PBXProject "BTOSC KART" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FAD3C7123C3AA560082E535 /* Debug */,
@@ -396,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FAD3C7323C3AA560082E535 /* Build configuration list for PBXNativeTarget "BAZARO" */ = {
+		6FAD3C7323C3AA560082E535 /* Build configuration list for PBXNativeTarget "BTOSC KART" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FAD3C7423C3AA560082E535 /* Debug */,
