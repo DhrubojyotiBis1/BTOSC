@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func forgetPasswordButtonPressed(_ sender:UIButton){
+        performSegue(withIdentifier: segueIdentifier.forgetPasswordVC, sender: nil)
+    }
+    
     @IBAction func signInPassword(_ sender:UIButton){
         
         if(email.text == "" || password.text == ""){

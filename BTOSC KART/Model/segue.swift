@@ -10,4 +10,9 @@ import Foundation
 
 struct segueIdentifier {
     static let OtpVaificationVC = "goToOtpVarificationVC"
+    static let homeVC = "goToHomeVC"
+    static let forgetPasswordVC = "goToForgetPasswordVC"
+    static let changePasswordCodeVarificationVC = "goToPasswordCodeVarificationVC"
+    static let confirmNewPasswordVC = "goToConfirmNewPasswordVC"
+    static let PasswordChangeCompleteVC = "goToPasswordChangeCompleteVC"
 }

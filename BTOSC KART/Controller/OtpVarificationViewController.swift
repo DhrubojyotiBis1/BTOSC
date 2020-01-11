@@ -34,12 +34,13 @@ class OtpVarificationViewController: UIViewController {
     
     @IBAction func continueButtonPressed(_ sender:UIButton){
         //checking if all four digit is enterd or not
-        if(self.firstNumberInOtpTextField.text != "" || self.secondNumberInOtpTextField.text != "" || self.thirdNumberInOtpTextField.text == "" || self.fourthNumberInOtpTextField.text != ""){
+        /*if(self.firstNumberInOtpTextField.text != "" || self.secondNumberInOtpTextField.text != "" || self.thirdNumberInOtpTextField.text == "" || self.fourthNumberInOtpTextField.text != ""){
             self.neworkingForOtpVarification()
         }else{
             //all four digit of otp not entered
             //show error massage to the user
-        }
+        }*/
+        performSegue(withIdentifier: segueIdentifier.homeVC, sender: nil)
     }
     
     @IBAction func backButtonPressed(_ sender:UIButton){
