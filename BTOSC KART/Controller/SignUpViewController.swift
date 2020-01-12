@@ -19,12 +19,20 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPassword: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
     
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            // Do any additional setup after loading the view.
-            self.setup()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        self.setup()
             
+    }
+    
+    @IBAction func showSecureText(_ sender:UIButton){
+        if sender.tag == 1 {
+            self.password.isSecureTextEntry = !password.isSecureTextEntry
+        }else{
+            self.confirmPassword.isSecureTextEntry = !confirmPassword.isSecureTextEntry
         }
+    }
     
     @IBAction func signUpButtonPressed(_ sender:UIButton){
         

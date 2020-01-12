@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WaZ-Lb-qjn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tps-Hm-JpN">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -91,7 +91,7 @@
                                                             <constraint firstAttribute="height" constant="30" id="vEr-9t-7Ex"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-fh-7io">
                                                         <rect key="frame" x="0.0" y="34" width="311" height="1"/>
@@ -152,6 +152,9 @@
                                             <constraint firstAttribute="height" constant="22" id="OfG-Rh-QWr"/>
                                         </constraints>
                                         <state key="normal" image="Disable Eye"/>
+                                        <connections>
+                                            <action selector="showPasswordButtonPressed:" destination="tps-Hm-JpN" eventType="touchUpInside" id="Xaq-NS-eEW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -401,13 +404,16 @@
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5l-eL-Jzc">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5l-eL-Jzc">
                                         <rect key="frame" x="299" y="214" width="24" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="fLg-Ue-QLC"/>
                                             <constraint firstAttribute="width" constant="24" id="r1l-2m-sGz"/>
                                         </constraints>
                                         <state key="normal" image="Disable Eye"/>
+                                        <connections>
+                                            <action selector="showSecureText:" destination="vhK-yJ-jCA" eventType="touchUpInside" id="a3a-Ha-9ks"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP5-ey-dyj">
                                         <rect key="frame" x="299" y="262" width="24" height="22"/>
@@ -416,6 +422,9 @@
                                             <constraint firstAttribute="width" constant="24" id="sOx-Ia-ZcR"/>
                                         </constraints>
                                         <state key="normal" image="Disable Eye"/>
+                                        <connections>
+                                            <action selector="showSecureText:" destination="vhK-yJ-jCA" eventType="touchUpInside" id="dIa-ag-V8f"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ySq-PT-mWT">
                                         <rect key="frame" x="20" y="162" width="303" height="33"/>
@@ -896,7 +905,7 @@
                                 </constraints>
                                 <state key="normal" image="Back"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUn-0H-9Ey">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUn-0H-9Ey">
                                 <rect key="frame" x="319" y="8" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.91517290613197966" green="0.91517290613197966" blue="0.91517290613197966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -955,7 +964,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkJ-ZM-LQQ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkJ-ZM-LQQ">
                                 <rect key="frame" x="336" y="16" width="20" height="20"/>
                                 <color key="backgroundColor" red="0.92366319890000004" green="0.48188972470000002" blue="0.44504928589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1061,7 +1070,7 @@
                                 </constraints>
                                 <state key="normal" image="Back"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DU-S7-g9X">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DU-S7-g9X">
                                 <rect key="frame" x="319" y="8" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.91517290610000002" green="0.91517290610000002" blue="0.91517290610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1117,7 +1126,7 @@
                                     <action selector="varfyButtonPressed:" destination="zLL-ky-eZO" eventType="touchUpInside" id="mnP-hv-hx6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mME-gn-z3F">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mME-gn-z3F">
                                 <rect key="frame" x="336" y="16" width="20" height="20"/>
                                 <color key="backgroundColor" red="0.92366319890000004" green="0.48188972470000002" blue="0.44504928589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1162,7 +1171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4V-A8-PCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218.69565217391306" y="-515"/>
+            <point key="canvasLocation" x="209" y="-537"/>
         </scene>
         <!--Confirm New Password View Controller-->
         <scene sceneID="32w-RG-yeK">
@@ -1172,14 +1181,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5j-iP-Lj0">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5j-iP-Lj0">
                                 <rect key="frame" x="16" y="8" width="24" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="myl-pC-23B"/>
                                 </constraints>
                                 <state key="normal" image="Back"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-bL-qzf">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-bL-qzf">
                                 <rect key="frame" x="319" y="8" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.91517290610000002" green="0.91517290610000002" blue="0.91517290610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1194,7 +1203,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-cU-pFh">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-cU-pFh">
                                 <rect key="frame" x="336" y="16" width="20" height="20"/>
                                 <color key="backgroundColor" red="0.92366319890000004" green="0.48188972470000002" blue="0.44504928589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1235,7 +1244,7 @@
                                             <constraint firstAttribute="height" constant="30" id="sHQ-HL-uvw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="KSK-DQ-XC5">
                                         <rect key="frame" x="0.0" y="55" width="343" height="1"/>
@@ -1247,21 +1256,16 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGQ-su-9Ge">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGQ-su-9Ge">
                                 <rect key="frame" x="335" y="145.5" width="24" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="6C1-OT-ZMJ"/>
                                     <constraint firstAttribute="height" constant="22" id="wq5-Sh-mtY"/>
                                 </constraints>
                                 <state key="normal" image="Disable Eye"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lm-nS-KL4">
-                                <rect key="frame" x="335" y="231.5" width="24" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="Wg7-Vk-ENt"/>
-                                    <constraint firstAttribute="height" constant="22" id="aqT-jo-3m8"/>
-                                </constraints>
-                                <state key="normal" image="Disable Eye"/>
+                                <connections>
+                                    <action selector="showSecureText:" destination="lGq-28-yIT" eventType="touchUpInside" id="FQY-3w-OHS"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="odc-6v-xJ4">
                                 <rect key="frame" x="16" y="206.5" width="343" height="56"/>
@@ -1279,7 +1283,7 @@
                                             <constraint firstAttribute="height" constant="30" id="zTt-i6-qj9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="bLk-2f-bci">
                                         <rect key="frame" x="0.0" y="55" width="343" height="1"/>
@@ -1291,6 +1295,17 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lm-nS-KL4">
+                                <rect key="frame" x="335" y="231.5" width="24" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Wg7-Vk-ENt"/>
+                                    <constraint firstAttribute="height" constant="22" id="aqT-jo-3m8"/>
+                                </constraints>
+                                <state key="normal" image="Disable Eye"/>
+                                <connections>
+                                    <action selector="showSecureText:" destination="lGq-28-yIT" eventType="touchUpInside" id="dzy-JR-dVG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1344,14 +1359,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-cX-33B">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-cX-33B">
                                 <rect key="frame" x="16" y="8" width="24" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="x7P-Xx-BFC"/>
                                 </constraints>
                                 <state key="normal" image="Back"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idA-8J-hZi">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idA-8J-hZi">
                                 <rect key="frame" x="319" y="8" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.91517290610000002" green="0.91517290610000002" blue="0.91517290610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1360,7 +1375,7 @@
                                 </constraints>
                                 <state key="normal" image="notification"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdk-5z-0ao">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdk-5z-0ao">
                                 <rect key="frame" x="336" y="16" width="20" height="20"/>
                                 <color key="backgroundColor" red="0.92366319890000004" green="0.48188972470000002" blue="0.44504928589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

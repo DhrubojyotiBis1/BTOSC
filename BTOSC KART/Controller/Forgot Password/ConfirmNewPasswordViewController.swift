@@ -26,6 +26,14 @@ class ConfirmNewPasswordViewController: UIViewController {
         self.setup()
     }
     
+    @IBAction func showSecureText(_ sender:UIButton){
+        if sender.tag == 1{
+            self.password.isSecureTextEntry = !password.isSecureTextEntry
+        }else{
+            self.confirmPassword.isSecureTextEntry = !confirmPassword.isSecureTextEntry
+        }
+    }
+    
     @IBAction func confirmPasswordButtonPressed(_ sender:UIButton){
         performSegue(withIdentifier: segueIdentifier.PasswordChangeCompleteVC, sender: nil)
     }

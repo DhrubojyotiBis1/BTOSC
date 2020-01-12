@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: segueIdentifier.forgetPasswordVC, sender: nil)
     }
     
+    @IBAction func showPasswordButtonPressed(_ sender:UIButton){
+        password.isSecureTextEntry = !password.isSecureTextEntry
+    }
+    
     @IBAction func signInPassword(_ sender:UIButton){
         
         if(email.text == "" || password.text == ""){
