@@ -70,6 +70,7 @@ class networking {
         }
     }
     
+    //For otp varification
     func otpVarification(withOtp otp:String,andPhoneNumber phoneNumber:String,completion:@escaping (_ result:Bool,_ type:String)->()){
         let pram = [smsGateWay.authenticationKey:smsGateWayConstants.authenticationKey,smsGateWay.phoneNumber : phoneNumber,smsGateWay.otp:otp]
         //trying to do networking for varification
@@ -91,6 +92,12 @@ class networking {
                 print(response.error?.localizedDescription as Any)
                 completion(false,"Network Error")
             }
+        }
+    }
+    
+    func getSellerDetails(){
+        Alamofire.request(urls.sellerDetailsURL,method: .get).responseJSON { (response) in
+            print(response.result.value!)
         }
     }
     

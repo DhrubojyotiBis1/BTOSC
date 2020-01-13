@@ -13,7 +13,6 @@ class changePasswordCodeVarificationViewController: UIViewController {
     @IBOutlet weak var badgeNumber: UILabel!
     @IBOutlet weak var notificationButton:UIButton!
     @IBOutlet weak var varifyButton:UIButton!
-    @IBOutlet weak var backButton:UIButton!
     @IBOutlet weak var code: UITextField!
     @IBOutlet weak var phoneNumberLine:UIView!
     @IBOutlet weak var contentView:UIView!
@@ -52,7 +51,6 @@ extension changePasswordCodeVarificationViewController{
         self.notificationButton.layer.cornerRadius = 20
         self.badgeNumber.layer.cornerRadius = 10
         self.varifyButton.layer.cornerRadius = 20
-        self.backButton.layer.cornerRadius = 20
         //setting gesture
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onTap))
             self.contentView.addGestureRecognizer(tapGesture)

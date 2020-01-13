@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.setup()
-        
+        networking().getSellerDetails()
     }
     
     @IBAction func forgetPasswordButtonPressed(_ sender:UIButton){

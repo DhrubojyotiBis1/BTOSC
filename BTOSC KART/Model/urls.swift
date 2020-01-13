@@ -12,4 +12,5 @@ struct urls {
     static let otpVarificationURL = "http://www.mysmscenter.com/api/verifyRequestOTP.php?"
     static let reSendOtpURL = "http://www.mysmscenter.com/api/retryotp.php?"
     static let getOtpURL = "http://www.mysmscenter.com/api/otp.php?"
+    static let sellerDetailsURL = "https://btoscecom.herokuapp.com/api/settings.php"
 }
