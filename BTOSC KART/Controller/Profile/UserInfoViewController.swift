@@ -9,22 +9,22 @@
 import UIKit
 
 class UserInfoViewController: UIViewController {
+    
+    @IBOutlet weak var aboutView:UIView!
+    @IBOutlet weak var generalInfoView:UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.setup()
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension UserInfoViewController{
+    private func setup(){
+        self.aboutView.layer.cornerRadius = 5
+        self.generalInfoView.layer.cornerRadius = 8
     }
-    */
-
 }
