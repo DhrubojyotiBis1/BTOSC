@@ -14,6 +14,7 @@
 		6F5578DC23CA45AD005C9FC1 /* custumColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5578DB23CA45AD005C9FC1 /* custumColour.swift */; };
 		6F5578DE23CA4B91005C9FC1 /* ConfirmNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5578DD23CA4B91005C9FC1 /* ConfirmNewPasswordViewController.swift */; };
 		6F5578E123CA52F3005C9FC1 /* PasswordChangeCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5578E023CA52F3005C9FC1 /* PasswordChangeCompleteViewController.swift */; };
+		6F5837DA23CF549E005A74C3 /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5837D923CF549E005A74C3 /* AddAddressViewController.swift */; };
 		6F59625823C51A03005D65CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59625723C51A03005D65CA /* SignUpViewController.swift */; };
 		6F59F30523CDBD340030345C /* AccountAndCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F30423CDBD340030345C /* AccountAndCardViewController.swift */; };
 		6F59F30723CDD37D0030345C /* AccountAndCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F30623CDD37D0030345C /* AccountAndCardTableViewCell.swift */; };
@@ -46,6 +47,7 @@
 		6F5578DB23CA45AD005C9FC1 /* custumColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custumColour.swift; sourceTree = "<group>"; };
 		6F5578DD23CA4B91005C9FC1 /* ConfirmNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmNewPasswordViewController.swift; sourceTree = "<group>"; };
 		6F5578E023CA52F3005C9FC1 /* PasswordChangeCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeCompleteViewController.swift; sourceTree = "<group>"; };
+		6F5837D923CF549E005A74C3 /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
 		6F59625723C51A03005D65CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6F59F30423CDBD340030345C /* AccountAndCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAndCardViewController.swift; sourceTree = "<group>"; };
 		6F59F30623CDD37D0030345C /* AccountAndCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAndCardTableViewCell.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				6F5578DF23CA4BA4005C9FC1 /* Forgot Password */,
 				6F59F30A23CE2C080030345C /* AccountAndCard */,
 				6F59F30D23CE44A50030345C /* Profile */,
+				6F5837D923CF549E005A74C3 /* AddAddressViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F5578DA23CA4450005C9FC1 /* changePasswordCodeVarificationViewController.swift in Sources */,
+				6F5837DA23CF549E005A74C3 /* AddAddressViewController.swift in Sources */,
 				6F59F31523CE54E80030345C /* UserInfoViewController.swift in Sources */,
 				6F59625823C51A03005D65CA /* SignUpViewController.swift in Sources */,
 				6FAD3C6423C3AA550082E535 /* ViewController.swift in Sources */,
