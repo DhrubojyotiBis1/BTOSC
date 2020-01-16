@@ -17,6 +17,8 @@
 		6F5837DA23CF549E005A74C3 /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5837D923CF549E005A74C3 /* AddAddressViewController.swift */; };
 		6F5837DC23CFAB9A005A74C3 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5837DB23CFAB9A005A74C3 /* WishListViewController.swift */; };
 		6F5837DF23CFAC31005A74C3 /* WishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5837DE23CFAC31005A74C3 /* WishListTableViewCell.swift */; };
+		6F58892C23D0EF6200E4842E /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F58892B23D0EF6200E4842E /* AddressViewController.swift */; };
+		6F58892F23D0F04300E4842E /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F58892E23D0F04300E4842E /* AddressTableViewCell.swift */; };
 		6F59625823C51A03005D65CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59625723C51A03005D65CA /* SignUpViewController.swift */; };
 		6F59F30523CDBD340030345C /* AccountAndCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F30423CDBD340030345C /* AccountAndCardViewController.swift */; };
 		6F59F30723CDD37D0030345C /* AccountAndCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F30623CDD37D0030345C /* AccountAndCardTableViewCell.swift */; };
@@ -52,6 +54,8 @@
 		6F5837D923CF549E005A74C3 /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
 		6F5837DB23CFAB9A005A74C3 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		6F5837DE23CFAC31005A74C3 /* WishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTableViewCell.swift; sourceTree = "<group>"; };
+		6F58892B23D0EF6200E4842E /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		6F58892E23D0F04300E4842E /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
 		6F59625723C51A03005D65CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6F59F30423CDBD340030345C /* AccountAndCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAndCardViewController.swift; sourceTree = "<group>"; };
 		6F59F30623CDD37D0030345C /* AccountAndCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAndCardTableViewCell.swift; sourceTree = "<group>"; };
@@ -110,8 +114,8 @@
 				6F5578DF23CA4BA4005C9FC1 /* Forgot Password */,
 				6F59F30A23CE2C080030345C /* AccountAndCard */,
 				6F59F30D23CE44A50030345C /* Profile */,
-				6F5837D923CF549E005A74C3 /* AddAddressViewController.swift */,
 				6F5837DD23CFAC0B005A74C3 /* Wishlist */,
+				6F58892D23D0F02000E4842E /* Address */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +168,16 @@
 				6F5837DE23CFAC31005A74C3 /* WishListTableViewCell.swift */,
 			);
 			path = Wishlist;
+			sourceTree = "<group>";
+		};
+		6F58892D23D0F02000E4842E /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				6F58892B23D0EF6200E4842E /* AddressViewController.swift */,
+				6F58892E23D0F04300E4842E /* AddressTableViewCell.swift */,
+				6F5837D923CF549E005A74C3 /* AddAddressViewController.swift */,
+			);
+			path = Address;
 			sourceTree = "<group>";
 		};
 		6F59F30A23CE2C080030345C /* AccountAndCard */ = {
@@ -270,6 +284,7 @@
 				TargetAttributes = {
 					6FAD3C5B23C3AA550082E535 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -359,6 +374,7 @@
 				6FCB734323C64D5A004B6264 /* constantStrings.swift in Sources */,
 				6F0E595223C913EC002B25FA /* segue.swift in Sources */,
 				6F59F31123CE4B6D0030345C /* YourReviewViewController.swift in Sources */,
+				6F58892F23D0F04300E4842E /* AddressTableViewCell.swift in Sources */,
 				6F59F31323CE4B940030345C /* YourReviewTableViewCell.swift in Sources */,
 				6F59F30523CDBD340030345C /* AccountAndCardViewController.swift in Sources */,
 				6FAD3C6023C3AA550082E535 /* AppDelegate.swift in Sources */,
@@ -370,6 +386,7 @@
 				6F501D9323C48DB800F8E022 /* setUp.swift in Sources */,
 				6F5578DE23CA4B91005C9FC1 /* ConfirmNewPasswordViewController.swift in Sources */,
 				6FAD3C6A23C3AA550082E535 /* BAZARO.xcdatamodeld in Sources */,
+				6F58892C23D0EF6200E4842E /* AddressViewController.swift in Sources */,
 				6F5578DC23CA45AD005C9FC1 /* custumColour.swift in Sources */,
 				6FCB734123C646CE004B6264 /* networking.swift in Sources */,
 				6F59F30923CE14BF0030345C /* ShowCardTableViewController.swift in Sources */,
@@ -522,6 +539,7 @@
 			baseConfigurationReference = F040C91ECD130DA750C7B991 /* Pods-BTOSC KART.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55DX457GXB;
 				INFOPLIST_FILE = "BTOSC KART/Info.plist";
@@ -531,6 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tips.BTOSC KART";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -541,6 +560,7 @@
 			baseConfigurationReference = DF2A6D8D7FBB102F8CA641A9 /* Pods-BTOSC KART.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55DX457GXB;
 				INFOPLIST_FILE = "BTOSC KART/Info.plist";

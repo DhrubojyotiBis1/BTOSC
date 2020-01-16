@@ -17,4 +17,6 @@ struct segueIdentifier {
     static let PasswordChangeCompleteVC = "goToPasswordChangeCompleteVC"
     static let profileVC = "goToProfileVC"
     static let accountAndCardVC = "goToAccountAndCardVC"
+    static let addAddressVcC = "goToAddAddressVC"
+    static let addressVC = "goToAddressVC"
 }
