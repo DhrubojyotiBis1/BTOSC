@@ -12,6 +12,9 @@
 		6F500B35240FD9BC00DB0968 /* MyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500B34240FD9BC00DB0968 /* MyOrderViewController.swift */; };
 		6F500B3824114E1D00DB0968 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500B3724114E1D00DB0968 /* CheckOutViewController.swift */; };
 		6F500B3B241227BD00DB0968 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500B3A241227BD00DB0968 /* HomeViewController.swift */; };
+		6F500B3E2413CA7000DB0968 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500B3D2413CA7000DB0968 /* NotificationViewController.swift */; };
+		6F500B412413D4D100DB0968 /* NotificationHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500B402413D4D100DB0968 /* NotificationHeaderTableViewCell.swift */; };
+		6F500B432413D4F400DB0968 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500B422413D4F400DB0968 /* NotificationTableViewCell.swift */; };
 		6F501D9323C48DB800F8E022 /* setUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F501D9223C48DB800F8E022 /* setUp.swift */; };
 		6F5578D823CA319B005C9FC1 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5578D723CA319B005C9FC1 /* ForgetPasswordViewController.swift */; };
 		6F5578DA23CA4450005C9FC1 /* changePasswordCodeVarificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5578D923CA4450005C9FC1 /* changePasswordCodeVarificationViewController.swift */; };
@@ -55,6 +58,9 @@
 		6F500B34240FD9BC00DB0968 /* MyOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderViewController.swift; sourceTree = "<group>"; };
 		6F500B3724114E1D00DB0968 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		6F500B3A241227BD00DB0968 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6F500B3D2413CA7000DB0968 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		6F500B402413D4D100DB0968 /* NotificationHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		6F500B422413D4F400DB0968 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		6F501D9223C48DB800F8E022 /* setUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setUp.swift; sourceTree = "<group>"; };
 		6F5578D723CA319B005C9FC1 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		6F5578D923CA4450005C9FC1 /* changePasswordCodeVarificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePasswordCodeVarificationViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +137,16 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		6F500B3F2413CA8100DB0968 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				6F500B3D2413CA7000DB0968 /* NotificationViewController.swift */,
+				6F500B402413D4D100DB0968 /* NotificationHeaderTableViewCell.swift */,
+				6F500B422413D4F400DB0968 /* NotificationTableViewCell.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		6F5330BA23C62482009D569E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +173,7 @@
 				6F500B36240FD9C200DB0968 /* My Order */,
 				6F500B3924114E3C00DB0968 /* CheckOut */,
 				6F500B3C241227C800DB0968 /* Home */,
+				6F500B3F2413CA8100DB0968 /* Notification */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -422,6 +439,8 @@
 				6F59F31523CE54E80030345C /* UserInfoViewController.swift in Sources */,
 				6F59625823C51A03005D65CA /* SignUpViewController.swift in Sources */,
 				6F500B3B241227BD00DB0968 /* HomeViewController.swift in Sources */,
+				6F500B432413D4F400DB0968 /* NotificationTableViewCell.swift in Sources */,
+				6F500B412413D4D100DB0968 /* NotificationHeaderTableViewCell.swift in Sources */,
 				6FAD3C6423C3AA550082E535 /* ViewController.swift in Sources */,
 				6FCB734323C64D5A004B6264 /* constantStrings.swift in Sources */,
 				6F0E595223C913EC002B25FA /* segue.swift in Sources */,
@@ -430,6 +449,7 @@
 				6F59F31323CE4B940030345C /* YourReviewTableViewCell.swift in Sources */,
 				6F500B35240FD9BC00DB0968 /* MyOrderViewController.swift in Sources */,
 				6F59F30523CDBD340030345C /* AccountAndCardViewController.swift in Sources */,
+				6F500B3E2413CA7000DB0968 /* NotificationViewController.swift in Sources */,
 				6FAD3C6023C3AA550082E535 /* AppDelegate.swift in Sources */,
 				6F5837DC23CFAB9A005A74C3 /* WishListViewController.swift in Sources */,
 				6FB79967240ED6D30053D966 /* MyCartTableViewCell.swift in Sources */,
