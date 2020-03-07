@@ -7,12 +7,21 @@
 //
 
 import UIKit
+protocol AddressTableViewCellProtocol {
+    func checkBoxPressed(WithTag tag:Int)
+}
+
+fileprivate var currentAddressSelected = -1
 
 class AddressTableViewCell: UITableViewCell {
     
     @IBOutlet weak var name:UILabel!
     @IBOutlet weak var address:UILabel!
+    @IBOutlet weak var phoneNumber:UILabel!
     @IBOutlet weak var contentview:UIView!
+    @IBOutlet weak var addressType:UILabel!
+    @IBOutlet weak var checkBoxButton:UIButton!
+    var delegate:AddressTableViewCellProtocol?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,7 +36,22 @@ class AddressTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         self.contentview.layer.cornerRadius = 7
-        setUp().makeCardView(forView: self.contentview, withShadowHight: 4, shadowWidth: 0, shadowOpacity: 0.3, shadowRadius: 10)
+        setUp().makeCardView(forView: self.contentview, withShadowHight: 3, shadowWidth: 0, shadowOpacity: 0.45, shadowRadius: 8)
+    }
+    
+    @IBAction func checkBoxButtonPressed(_ sender:UIButton){
+        if currentAddressSelected != sender.tag{
+            currentAddressSelected = sender.tag
+            self.delegate?.checkBoxPressed(WithTag: currentAddressSelected)
+        }
     }
 
+}
+
+extension AddressTableViewCell{
+    //All private functions
+    
+    private func setup(){
+        
+    }
 }
